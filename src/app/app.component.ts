@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import{empArr, studentArr, productArr, courseArr, bookArr} from '../app/const/tables'
+import{empArr, studentArr, productArr, courseArr, bookArr, customerArr, orderArr, movieArr, teacherArr, vehicleArr, hotelArr} from '../app/const/tables'
 
 
 @Component({
@@ -14,4 +14,10 @@ export class AppComponent {
   productArr = productArr;
   courseArr = courseArr;
   bookArr = bookArr;
+  customerArr = customerArr;
+  orderArr = orderArr;
+  movieArr = movieArr;
+  teacherArr = teacherArr;
+  vehicleArr = vehicleArr;
+  hotelArr = hotelArr;
 }

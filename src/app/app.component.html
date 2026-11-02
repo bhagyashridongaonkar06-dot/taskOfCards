@@ -251,5 +251,299 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="col-10 offset-1">
+            <div class="card">
+                <h1 class="text-center"><span class="bg-success">Customer Array</span></h1>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="bg-success">
+                            <tr>
+                                <th>SrNo</th>
+                                <th>Name</th>
+                                <th>City</th>
+                                <th>Age</th>
+                                <th>Email</th>
+                                <th>IsPrime</th>
+                                <th>Contact</th>
+                                <th>Edit/Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let cust of customerArr let i = index">
+                                <td>{{i + 1}}</td>
+                                <td>{{cust.name}}</td>
+                                <td>{{cust.city}}</td>
+                                <td>{{cust.age}}</td>
+                                <td>{{cust.email}}</td>
+                                <td>{{cust.isPrime}}</td>
+                                <td>{{cust.contact}}</td>
+                                <td class="d-flex justify-content-between">
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="primary"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>edit</mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="warn"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-10 offset-1">
+            <div class="card">
+                <h1 class="text-center"><span class="bg-success">Order Array</span></h1>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="bg-info">
+                            <tr>
+                                <th>SrNo</th>
+                                <th>CustomerName</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Edit /Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let ord of orderArr let i = index">
+                                <td>{{i + 1}}</td>
+                                <td>{{ord.customerName}}</td>
+                                <td>{{ord.product}}</td>
+                                <td>{{ord.amount}}</td>
+                                <td>{{ord.status}}</td>
+                                <td>{{ord.date}}</td>
+                                <td class="d-flex justify-content-between">
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="primary"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>edit</mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="warn"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="col-10 offset-1 mt-4">
+            <div class="card">
+                <h1 class="text-center"><span class="bg-success">Movie Array</span></h1>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="bg-warning">
+                            <tr>
+                                <th>SrNo</th>
+                                <th>Title</th>
+                                <th>Genre</th>
+                                <th>Rating</th>
+                                <th>Release Year</th>
+                                <th>IsHit</th>
+                                <th>Languages</th>
+                                <th>Edit / Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let mov of movieArr let i = index">
+                                <td>{{i + 1}}</td>
+                                <td>{{mov.title}}</td>
+                                <td>{{mov.genre}}</td>
+                                <td>{{mov.rating}}</td>
+                                <td>{{mov.releaseYear}}</td>
+                                <td>{{mov.isHit}}</td>
+                                <td>{{mov.language}}</td>
+                                <td class="d-flex justify-content-between">
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="primary"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>edit</mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="warn"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="col-10 mt-5 offset-1">
+            <div class="card">
+                <h1 class="text-center"><span class="bg-success">Teacher Array</span></h1>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="bg-danger">
+                            <tr>
+                                <th>SrNo</th>
+                                <th>Name</th>
+                                <th>Subject</th>
+                                <th>Experience</th>
+                                <th>Salary</th>
+                                <th>IsFullTime</th>
+                                <th>Email</th>
+                                <th>Edit / Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let teac of teacherArr let i = index">
+                                <td>{{i + 1}}</td>
+                                <td>{{teac.name}}</td>
+                                <td>{{teac.subject}}</td>
+                                <td>{{teac.experience}}</td>
+                                <td>{{teac.salary}}</td>
+                                <td>{{teac.isFullTime}}</td>
+                                <td>{{teac.email}}</td>
+                                <td class="d-flex justify-content-between">
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="primary"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>edit</mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="warn"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-10 offset-1 mt-4">
+            <div class="card">
+                <h1 class="text-center"><span class="bg-success">Vehicle Array</span></h1>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="bg-primary">
+                            <tr>
+                                <th>SrNo</th>
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Type</th>
+                                <th>Price</th>
+                                <th>IsAvailable</th>
+                                <th>Fuel</th>
+                                <th>Edit</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let veh of vehicleArr let i = index">
+                                <td>{{i + 1}}</td>
+                                <td>{{veh.brand}}</td>
+                                <td>{{veh.model}}</td>
+                                <td>{{veh.type}}</td>
+                                <td>{{veh.price}}</td>
+                                <td>{{veh.isAvailable}}</td>
+                                <td>{{veh.fuel}}</td>
+                                <td>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="primary"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>edit</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="warn"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-10 offset-1 mt-4">
+            <div class="card">
+                <h1 class="text-center"><span class="bg-success">Hotel Array</span></h1>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead class="bg-dark text-white">
+                            <tr>
+                                <th>SrNo</th>
+                                <th>Name</th>
+                                <th>City</th>
+                                <th>Rating</th>
+                                <th>PricePerNight</th>
+                                <th>IsAvailable</th>
+                                <th>Rooms</th>
+                                <th>Contact</th>
+                                <th>Edit / Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let hotel of hotelArr let i = index">
+                                <td>{{i + 1}}</td>
+                                <td>{{hotel.name}}</td>
+                                <td>{{hotel.city}}</td>
+                                <td>{{hotel.rating}}</td>
+                                <td>{{hotel.pricePerNight}}</td>
+                                <td>{{hotel.isAvailable}}</td>
+                                <td>{{hotel.rooms}}</td>
+                                <td>{{hotel.contact}}</td>
+                                <td class="d-flex justify-content-between">
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="primary"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>edit</mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="example-button-container">
+                                        <button mat-mini-fab color="warn"
+                                            aria-label="Example icon button with a filter list icon">
+                                            <mat-icon>delete</mat-icon>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
